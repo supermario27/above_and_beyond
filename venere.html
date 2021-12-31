@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/venus.png">
+  <link href="favicon/venus.png" rel="icon">
+
+  <title>Venere</title>  
+
+<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+<!-- Add your content of header -->
+<style>
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px
+}
+
+.scrollToTopBtn {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px;
+  
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all .5s ease
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+.containers {
+  position: relative;
+  width: 320px;
+  margin: 50px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: static;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face { 
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  display: flex;
+}
+
+.carousel__face:nth-child(1) {
+  background-image: url("images/Carosello2/400px-Global_view_uvi_Venus_\(Akatsuki\).jpeg");
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+  background-image: url("images/Carosello2/400px-Maat_Mons_on_Venus.jpeg");
+    transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url("images/Carosello2/MW-EM488_venus__ZH_20160511100658.jpeg");
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("images/Carosello2/400px-PIA00103_Venus_-_3-D_Perspective_View_of_Lavinia_Planitia.jpeg");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+  background-image: url("images/Carosello2/Radar_Globe_of_Venus.gif");
+ transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+  background-image: url("images/Carosello2/spazio-v1-682422.jpeg");
+ transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+  background-image: url("images/Carosello2/Topographic_Globe_of_Venus.gif");
+ transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("images/Carosello2/wet-mars-east-hemisphere.jpeg");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("images/Carosello2/Venus-e1489179310371.jpeg");
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+</style>
+<header>
+  <nav style="position: unset;" class="navbar  navbar-fixed-top navbar-default">
+    <div  class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div style="margin-left: -90px;" class="collapse navbar-collapse" id="navbar-collapse" >
+        <ul class="nav navbar-nav ">
+          <li><a style="text-decoration:none" href="./index.html" title="">🪐 Welcome 🧑🏼‍🚀</a></li>
+          <li><a style="text-decoration:none"  href="./Solarsystem.html" title="">&#127756; Solar System</a></li>
+          <li><a style="text-decoration:none"  href="./spacex.html" title="">&#128640; SpaceX</a></li>
+          <li><a style="text-decoration:none" href="./nasa.html" title="">🌔 NASA</a></li>
+        </ul>
+&nbsp;
+          <ul style="margin-left: -200px;" class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+            <li><a style="text-decoration:none"  href="./Mercury.html" title="" class="active">Mercurio</a></li>
+            <li><a style="text-decoration:none"  href="./venere.html" title="" class="active">Venere</a></li>
+            <li><a style="text-decoration:none"  href="./terra.html" title="" class="active">Terra</a></li>
+            <li><a style="text-decoration:none"  href="./marte.html" title="" class="active">Marte</a></li>
+            <li><a style="text-decoration:none"  href="./giove.html" title="" class="active">Giove</a></li>
+            <li><a style="text-decoration:none"  href="./saturno.html" title="" class="active">Saturno</a></li>
+            <li><a style="text-decoration:none"  href="./urano.html" title="" class="active">Urano</a></li>
+            <li><a style="text-decoration:none"  href="./nettuno.html" title="" class="active">Nettuno</a></li>
+          </ul>
+
+
+      </div> 
+    </div>
+  </nav>
+</header>
+<head>
+    <title>Mercurio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&family=Walter+Turncoat&family=Amatic+SC&family=Calligraffitti&family=Fondamento&family=Merienda&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+        <div id="wrapper" class="divided">
+
+            <!-- One -->
+                <section class="banner style1 orient-right content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
+                    <div style="padding-top: 40px;" class="content">
+                        <h1>Venere&nbsp;&nbsp;<img src="favicon/venus.png" style="width: 55px; height: 55px;"></h1>
+                        <p class="major">In superficie calore e pressione non hanno permesso a sonde spaziali di funzionare che per brevi periodi. Sebbene esista uno strato atmosferico situato a 50 chilometri d'altezza in corrispondenza del quale la pressione atmosferica e la temperatura sono simili a quelle terrestri, le sue caratteristiche sono meno note di quelle della superficie della Luna o di Marte.In un ipotetico processo di terraformazione del pianeta, per ridurre la temperatura sulla superficie di Venere è stato ipotizzato di poter eliminare l'anidride carbonica dall'atmosfera allo scopo di diminuire l'effetto serra o di introdurre un enorme scudo solare che riduca l'irraggiamento del pianeta. L'acqua invece potrebbe essere prodotta introducendo nell'atmosfera grandi quantità d'idrogeno che si legherebbe all'ossigeno formando appunto acqua.</p>
+                        <ul class="actions stacked">
+                            <li><a href="#first" class="button big wide smooth-scroll-middle">Iniziamo!</a></li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img  src="images/Venere/PIA23791-Venus-NewlyProcessedView-20200608.jpeg" alt="" />
+                    </div>
+                </section>
+
+            <!-- Two -->
+                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+                    <div class="content">
+                        <h2>Struttura Interna</h2>
+                        <p>Anche se vi sono poche informazioni dirette sulla sua struttura interna e sulla geochimica venusiana a causa della mancanza di dati sismici e della mancata conoscenza del suo momento di inerzia, le somiglianze in termini di dimensioni e di densità tra Venere e la Terra suggeriscono che i due pianeti possano avere una struttura interna simile: un nucleo, un mantello e una crosta. Si ritiene che il nucleo venusiano, come quello della Terra, sia almeno parzialmente liquido dal momento che i due pianeti hanno avuto un processo di raffreddamento simile. Le dimensioni leggermente inferiori di Venere suggeriscono che le pressioni al suo interno siano significativamente più basse di quelle terrestri</p>
+                        <ul class="actions stacked">
+                            
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/Venere/07_11_internalstructure.jpeg" alt="" />
+                    </div>
+                </section>
+
+            <!-- Three -->
+                <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2>Superficie</h2>
+                        <p>Le sonde Venera, che si posarono sulla superficie di Venere, ripresero aree costituite principalmente da rocce di basalto. La prima e unica mappatura completa del pianeta è stata ottenuta attraverso la sonda Magellano, operativa tra il 1990 e il 1994. Furono così individuati un migliaio circa di crateri da impatto, un numero basso se confrontato con i dati relativi alla superficie terrestre. La scarsa presenza di crateri e il fatto che essi siano relativamente grandi, oltre i 3 km di diametro, è dovuto alla densa atmosfera venusiana che impedisce l'arrivo in superficie dei meteoriti più piccoli, causandone la disgregazione prima dell'impatto al suolo.</p>
+                        <ul class="actions stacked">
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/Venere/584730dbe02ba75e658b6bd4.jpeg" alt="" />
+                    </div>
+                </section>
+
+            <!-- Four -->
+                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2>Atmosfera🌫️</h2>
+                        <p>L'atmosfera di Venere è molto diversa da quella della Terra, sia in composizione sia in densità: è costituita al 96,5% di anidride carbonica e il 3,5% restante è azoto. La massa dell'atmosfera venusiana è circa 93 volte quella dell'atmosfera terrestre, mentre la pressione sulla superficie del pianeta è circa 92 volte quella della Terra, equivalente alla pressione presente a circa mille metri di profondità in un oceano terrestre. La densa atmosfera composta essenzialmente di CO2, insieme alle nubi di anidride solforosa, genera il più forte effetto serra del sistema solare, portando la temperatura della superficie del pianeta a oltre 460 °C. Questo rende la superficie di Venere più calda di quella di Mercurio e quindi di qualunque altro pianeta del sistema solare. Questo sebbene Venere sia due volte più distante dal Sole e riceva quindi solo il 25% dell'irraggiamento ricevuto dal pianeta più interno. A causa dell'assenza di acqua su Venere non vi è umidità sulla superficie, che a causa di temperatura e condizioni atmosferiche è stata spesso descritta come "infernale".</p>
+                        <ul class="actions stacked">
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/Venere/venus-volcanoes.jpeg" alt="" />
+                    </div>
+                </section>
+
+        
+<!-- Three -->
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+<div class="content">
+    <h2>Peculiarità</h2>
+    <p style="margin-left: 20px; margin-right: 20px;">Sicuramente Venere sarebbe perfetto per il covo di qualche super-cattivo... o per ricreare la battaglia su Mustafar di Obi-Wan e Anakin Skywalker. Sull'infernale mondo, infatti, sono stati individuati in superficie circa 1500 vulcani di dimensioni medio-grandi, ma ci potrebbero essere fino a un milione di vulcani minori, troppo piccoli per essere visti. Molti di essi sono dormienti e solo alcuni sarebbero attivi. Questo basta, comunque, per dare a Venere il titolo di "Pianeta del sistema solare con la maggior quantità di vulcani". Un tempo, tuttavia, era molto più simile al luogo in cui viviamo oggi di quanto si possa immaginare: esattamente 3 miliardi di anni fa. Sull'infernale mondo di oggi esistevano mari, oceani, fiumi e laghi, con una temperatura superficiale compresa fra i 20 e i 50 gradi centigradi. Per miliardi di anni, infatti, Venere potrebbe aver avuto un clima stabile, con possibili forme di vita.</p>
+    <ul class="actions stacked">
+    </ul>
+</div>
+<div class="image">
+    <img src="images/Venere/21a6b81b118b5f85b1892f5b3ac8226c.jpeg" alt="" style="background-attachment: fixed; background-size: cover;" />
+</div>
+</section>
+ 
+        <!-- Four -->
+            <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+                <div class="content">
+                    <h2>Il mondo impossibile da colonizzare</h2>
+                    <p>Considerando le sue condizioni estremamente ostili, una colonia sulla superficie di Venere è al di fuori della portata delle nostre attuali tecnologie. Tuttavia, esiste uno strato atmosferico situato a 50 chilometri d'altezza dove la pressione e la temperatura sono simili a quelle terrestri. Una proposta prevede la realizzazione di città galleggianti e habitat aerostatici che dovrebbero approfittare del fatto che l'aria è respirabile, costituita da ossigeno e azoto, più leggera dei gas dell'atmosfera venusiana e capace di produrre una spinta verso l'alto, mantenendo in sospensione una cupola abitata. Mancano però degli studi su questa zona, in quanto a quelle altezze la quantità di acido solforico presente è particolarmente dannosa.</p>
+                    <ul class="actions stacked">
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="images/Venere/spazio-v1-682422.jpeg" alt="" />
+                </div>
+            </section>
+
+<!--Four -->
+<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+    <div style="padding-top: 20px; text-align: center;" class="content">
+    <h1 style="text-align: center;">🛰️&nbsp;&nbsp;Galleria&nbsp;&nbsp;📡</h1>
+    
+      <div class="containers">
+        <div class="carousel">
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+        </div>
+      </div>
+      
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      
+     <div style="align-items: center;padding-bottom: -10px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/EOdt8C6vvpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    
+     <button style="height: 50px; width: 50px; padding-left: 10px; padding-right: 6.3px;" class="scrollToTopBtn">☀️</button>
+  </div>
+  </section>
+
+
+</div>
+    <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+var rootElement = document.documentElement
+
+function handleScroll() {
+  // Do something on scroll
+  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+  if ((rootElement.scrollTop / scrollTotal ) > 0.80) {
+    // Show button
+    scrollToTopBtn.classList.add("showBtn")
+  } else {
+    // Hide button
+    scrollToTopBtn.classList.remove("showBtn")
+  }
+}
+
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop)
+document.addEventListener("scroll", handleScroll)</script>
+<script type="text/javascript" src="./main.70a66962.js"></script>
+        
+
+</body>
+</html>

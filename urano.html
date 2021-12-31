@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/uranus.png">
+  <link href="favicon/uranus.png" rel="icon">
+
+  <title>Urano</title>  
+
+<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+<!-- Add your content of header -->
+<style>
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px
+}
+
+.scrollToTopBtn {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px;
+  
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all .5s ease
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+.containers {
+  position: relative;
+  width: 320px;
+  margin: 50px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: static;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face { 
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  display: flex;
+}
+
+.carousel__face:nth-child(1) {
+  background-image: url("images/Carosello7/uranus-1.jpeg");
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+  background-image: url("images/Carosello7/pjsesss3hckueyeqgxfq.jpeg");
+    transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url("images/Carosello7/83054ca2-c394-4981-97ba-d29e84a0f663.gif");
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("images/Carosello7/Uranus_header_NASA_full-1.jpeg");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+  background-image: url("images/Carosello7/ac50359f-3647-4378-9071-3820c935499c_1920x1080.jpeg");
+ transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+  background-image: url("images/Carosello7/Uranus_Dark_spot.jpeg");
+ transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+  background-image: url("images/Carosello7/dmitry-bogolyubov-uranus.jpeg");
+ transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("images/Carosello7/UranusAnimatedImage.gif");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("images/Carosello7/uranus-inner-structure-science-image-represents-internal-planet-realistic-d-rendering-103883836.jpeg");
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+</style>
+<header>
+  <nav style="position: unset;" class="navbar  navbar-fixed-top navbar-default">
+    <div  class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div style="margin-left: -90px;" class="collapse navbar-collapse" id="navbar-collapse" >
+        <ul class="nav navbar-nav ">
+          <li><a style="text-decoration:none" href="./index.html" title="">🪐 Welcome 🧑🏼‍🚀</a></li>
+          <li><a style="text-decoration:none"  href="./Solarsystem.html" title="">&#127756; Solar System</a></li>
+          <li><a style="text-decoration:none"  href="./spacex.html" title="">&#128640; SpaceX</a></li>
+          <li><a style="text-decoration:none" href="./nasa.html" title="">🌔 NASA</a></li>
+        </ul>
+&nbsp;
+          <ul style="margin-left: -200px;" class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+            <li><a style="text-decoration:none"  href="./Mercury.html" title="" class="active">Mercurio</a></li>
+            <li><a style="text-decoration:none"  href="./venere.html" title="" class="active">Venere</a></li>
+            <li><a style="text-decoration:none"  href="./terra.html" title="" class="active">Terra</a></li>
+            <li><a style="text-decoration:none"  href="./marte.html" title="" class="active">Marte</a></li>
+            <li><a style="text-decoration:none"  href="./giove.html" title="" class="active">Giove</a></li>
+            <li><a style="text-decoration:none"  href="./saturno.html" title="" class="active">Saturno</a></li>
+            <li><a style="text-decoration:none"  href="./urano.html" title="" class="active">Urano</a></li>
+            <li><a style="text-decoration:none"  href="./nettuno.html" title="" class="active">Nettuno</a></li>
+          </ul>
+
+
+      </div> 
+    </div>
+  </nav>
+</header>
+<head>
+    <title>Terra</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&family=Walter+Turncoat&family=Amatic+SC&family=Calligraffitti&family=Fondamento&family=Merienda&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+        <div id="wrapper" class="divided">
+
+            <!-- One -->
+                <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+                    <div style="padding-top: 40px;" class="content">
+                        <h1><img src="favicon/uranus.png" style="width: 55px; height: 55px;">&nbsp;&nbsp;&nbsp;Urano</h1>
+                        <p class="major">Molto più grande della Terra, ma da essa davvero lontano, Urano è il settimo pianeta del Sistema Solare. Difficilissimo da vedere a occhio nudo, è un regno di rocce, ghiacci e nubi. È stato individuato sul finire del Settecento dal musicista e astronomo William Herschel grazie a un telescopio di sua costruzione.Urano, dal nome del Dio greco padre di Crono (Saturno) presenta come ogni pianeta, delle caratteristiche che lo rendono unico.</p>
+                        <ul class="actions stacked">
+                            <li><a href="#first" class="button big wide smooth-scroll-middle">Iniziamo!</a></li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/Urano/flat,750x1000,075,f.jpeg" alt="" />
+                    </div>
+                </section>
+
+            <!-- Two -->
+                <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+                    <div class="content">
+                        <h2>Struttura Interna</h2>
+                        <p>Urano non possiede una crosta solida: il gas atmosferico diventa sempre più denso procedendo verso l'interno e gradualmente si converte in liquido. In questi casi si adotta la convenzione di considerare come superficie del corpo il punto dove la pressione atmosferica è pari a 1 bar. Adottando tale convenzione, il raggio equatoriale e un raggio polare di Urano risultano pari rispettivamente a 25 559 ± 4 e 24 973 ± 20 km. Esso ha quindi la forma di uno sferoide oblato. 
+                          Urano (come Nettuno) ha una struttura interna solo in parte simile a quella di Giove e Saturno perché essa non presenta un mantello di idrogeno metallico liquido che è invece presente nei due giganti gassosi grazie alle enormi pressioni che esercitano sulle loro parti interne. Urano, di massa più piccola, non esercita una pressione sufficiente alla formazione di uno strato composto di tale materia degenere. Il nucleo roccioso di Urano è relativamente piccolo e poco massiccio; inoltre si differenzia da quello di Nettuno e degli altri pianeti giganti perché disperde poco calore: in termini astronomici esso ha un basso flusso termico.
+                          </p>
+                        <ul class="actions stacked">
+                            
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/Urano/Senza titolo.jpg" alt="" />
+                    </div>
+                </section>
+
+            <!-- Three -->
+                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2>Superficie</h2>
+                        <p>La massa di Urano è circa 14,5 volte quella della Terra, il che lo rende il meno massiccio dei pianeti giganti, nonostante il suo diametro, circa quattro volte quella della Terra, sia leggermente più grande di quello di Nettuno. Con una densità di 1,27 g/cm³ Urano è il secondo pianeta meno denso del sistema solare, dopo Saturno. La sua densità indica che Urano è composto principalmente di acqua, ammoniaca e metano congelati.[51] La massa totale di ghiaccio interno di Urano non è nota con precisione, perché emergono alcune differenze a seconda del modello scelto; essa dovrebbe essere compresa tra 9,3 e 13,5 masse terrestri. L'idrogeno e l'elio costituiscono solo una piccola parte della massa totale, rispettivamente 0,5 e 1,5 masse terrestri. Il resto della massa non ghiacciata (da 0,5 a 3,7 masse terrestri) è costituita da materiale roccioso.</p>
+                        <ul class="actions stacked">
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/Urano/artist-impression-of-uranus-atmosphere.jpg" alt="" />
+                    </div>
+                </section>
+
+            <!-- Four -->
+                <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2>Atmosfera🌫️</h2>
+                        <p>L'atmosfera di Urano, come quella di Nettuno, è differente dalle atmosfere dei giganti gassosi maggiori, Giove e Saturno. Sebbene anch'essa composta principalmente da idrogeno ed elio, contiene una proporzione maggiore di elementi volatili (soprannominati "ghiacci") come acqua, ammoniaca e metano. Gli studiosi ritengono che Urano, a differenza di Giove e Saturno, non possegga un mantello di idrogeno metallico al di sotto dell'alta atmosfera, ma che l'interno del pianeta consista di un "oceano" di ammoniaca, acqua e metano che gradualmente si trasforma in un'atmosfera gassosa dominata dall'idrogeno e dall'elio. A causa di queste differenze, alcuni astronomi raggruppano Urano e Nettuno nella categoria dei "giganti ghiacciati", per distinguerli da Giove e Saturno.</p>
+                        <ul class="actions stacked">
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/Urano/opo0732b.jpg" alt="" />
+                    </div>
+                </section>
+
+        
+<!-- Three -->
+<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+<div class="content">
+    <h2>&nbsp;&nbsp;Peculiarità</h2>
+    <p style="margin-left: 20px; margin-right: 20px;">Quando si tratta di sistemi ad anello, quelli di Saturno sono i più famosi. Oltre ad essere colorati e di vasta portata, sono anche molto visibili. Si potrebbero individuarli usando nient'altro che un telescopio da cortile. Ma in verità, tutti i giganti del gas e del ghiaccio hanno i propri sistemi di anelli e quello di Urano è il secondo set di anelli più drammatico del Sistema Solare.
+
+      Tuttavia, questi anelli sono composti da particelle estremamente scure che variano in dimensioni da micrometri a una frazione di metro - ecco perché non sono così distinguibili come quelli di Saturno. Attualmente sono noti tredici anelli distinti, il più luminoso è l'anello epsilon. E ad eccezione di due molto stretti, questi anelli di solito misurano pochi chilometri di larghezza.</p>
+    <ul class="actions stacked">
+    </ul>
+</div>
+<div class="image">
+    <img src="images/Urano/Uranus_orientation_1985-2030.gif" alt="" style="background-attachment: fixed; background-size: cover;" />
+</div>
+</section>
+
+
+<!--Four -->
+<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+  <div style="padding-top: 20px; text-align: center;" class="content">
+  <h1 style="text-align: center;">🛰️&nbsp;&nbsp;Galleria&nbsp;&nbsp;📡</h1>
+  
+    <div class="containers">
+      <div class="carousel">
+        <div class="carousel__face"></div>
+        <div class="carousel__face"></div>
+        <div class="carousel__face"></div>
+        <div class="carousel__face"></div>
+        <div class="carousel__face"></div>
+        <div class="carousel__face"></div>
+        <div class="carousel__face"></div>
+        <div class="carousel__face"></div>
+        <div class="carousel__face"></div>
+      </div>
+    </div>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+   <div style="align-items: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/hojT-WtiZ9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  
+   <button style="height: 50px; width: 50px; padding-left: 10px; padding-right: 6.3px;" class="scrollToTopBtn">☀️</button>
+</div>
+</section>
+</div>
+    <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+var rootElement = document.documentElement
+
+function handleScroll() {
+  // Do something on scroll
+  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+  if ((rootElement.scrollTop / scrollTotal ) > 0.80) {
+    // Show button
+    scrollToTopBtn.classList.add("showBtn")
+  } else {
+    // Hide button
+    scrollToTopBtn.classList.remove("showBtn")
+  }
+}
+
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop)
+document.addEventListener("scroll", handleScroll)</script>
+<script type="text/javascript" src="./main.70a66962.js"></script>
+        
+
+</body>
+</html>

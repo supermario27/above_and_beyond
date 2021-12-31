@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/mars_planet_PNG23.png">
+  <link href="favicon/mars_planet_PNG23.png" rel="icon">
+
+  <title>Marte</title>  
+
+<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+<!-- Add your content of header -->
+<style>
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px
+}
+
+.scrollToTopBtn {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px;
+  
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all .5s ease
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+.containers {
+  position: relative;
+  width: 320px;
+  margin: 50px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: static;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face { 
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  display: flex;
+}
+
+.carousel__face:nth-child(1) {
+  background-image: url("images/Carosello4/image-05.jpg");
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+  background-image: url("images/Carosello4/IMG_3951.JPG");
+    transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url("images/Carosello4/IMG_3953.JPG");
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("images/Carosello4/IMG_3954.JPG");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+  background-image: url("images/Carosello4/IMG_3955.jpg");
+ transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+  background-image: url("images/Carosello4/IMG_3957.GIF");
+ transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+  background-image: url("images/Carosello4/IMG_3958.GIF");
+ transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("images/Carosello4/IMG_3959.JPG");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("images/Carosello4/mars_colony.jpeg");
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+</style>
+<header>
+  <nav style="position: unset;" class="navbar  navbar-fixed-top navbar-default">
+    <div  class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div style="margin-left: -90px;" class="collapse navbar-collapse" id="navbar-collapse" >
+        <ul class="nav navbar-nav ">
+          <li><a style="text-decoration:none" href="./index.html" title="">🪐 Welcome 🧑🏼‍🚀</a></li>
+          <li><a style="text-decoration:none"  href="./Solarsystem.html" title="">&#127756; Solar System</a></li>
+          <li><a style="text-decoration:none"  href="./spacex.html" title="">&#128640; SpaceX</a></li>
+          <li><a style="text-decoration:none" href="./nasa.html" title="">🌔 NASA</a></li>
+        </ul>
+&nbsp;
+          <ul style="margin-left: -200px;" class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+            <li><a style="text-decoration:none"  href="./Mercury.html" title="" class="active">Mercurio</a></li>
+            <li><a style="text-decoration:none"  href="./venere.html" title="" class="active">Venere</a></li>
+            <li><a style="text-decoration:none"  href="./terra.html" title="" class="active">Terra</a></li>
+            <li><a style="text-decoration:none"  href="./marte.html" title="" class="active">Marte</a></li>
+            <li><a style="text-decoration:none"  href="./giove.html" title="" class="active">Giove</a></li>
+            <li><a style="text-decoration:none"  href="./saturno.html" title="" class="active">Saturno</a></li>
+            <li><a style="text-decoration:none"  href="./urano.html" title="" class="active">Urano</a></li>
+            <li><a style="text-decoration:none"  href="./nettuno.html" title="" class="active">Nettuno</a></li>
+          </ul>
+
+
+      </div> 
+    </div>
+  </nav>
+</header>
+<head>
+    <title>Marte</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&family=Walter+Turncoat&family=Amatic+SC&family=Calligraffitti&family=Fondamento&family=Merienda&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+        <div id="wrapper" class="divided">
+
+            <!-- One -->
+                <section class="banner style1 orient-right content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
+                    <div style="padding-top: 40px;" class="content">
+                        <h1>Marte&nbsp;&nbsp;<img src="favicon/mars_planet_PNG23.png" style="width: 55px; height: 55px;"></h1>
+                        <p class="major">All'osservazione diretta, Marte presenta variazioni di colore, imputate storicamente alla presenza di vegetazione stagionale, che si modificano al variare dei periodi dell'anno; ma successive osservazioni spettroscopiche dell'atmosfera hanno da tempo fatto abbandonare l'ipotesi che vi potessero essere mari, canali e fiumi oppure un'atmosfera sufficientemente densa. La smentita finale arrivò dalla missione Mariner 4, che nel 1965 mostrò un pianeta desertico e arido, animato da tempeste di sabbia periodiche e particolarmente violente. Le missioni più recenti hanno evidenziato la presenza di acqua ghiacciata.</p>
+                        <ul class="actions stacked">
+                            <li><a href="#first" class="button big wide smooth-scroll-middle">Iniziamo!</a></li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img  src="images/Marte/Senza titolo.jpg" alt="" />
+                    </div>
+                </section>
+
+            <!-- Two -->
+                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+                    <div class="content">
+                        <h2>Struttura Interna</h2>
+                        <p>Analogamente agli altri pianeti rocciosi conosciuti, Marte presenta una struttura interna tipicamente composta da un nucleo centrale, da un mantello e da una crosta superficiale.
+                            Le informazioni in nostro possesso sono tuttavia frammentarie; una migliore comprensione della struttura interna del pianeta rosso potrebbe contribuire a fare chiarezza sui meccanismi che potrebbero aver generato la sua atmosfera, sulla possibile presenza in passato di vita su Marte e sull'evoluzione planetaria dei pianeti rocciosi in generale. Sfortunatamente, la mancanza di dati sismologici significativi impedisce una conoscenza sufficientemente dettagliata dell'interno di Marte; tuttavia, grazie alle misurazioni del momento d'inerzia di Marte effettuate dalla sonda spaziale statunitense Mars Pathfinder è stato possibile accertare con sicurezza che il nucleo del pianeta, composto da materiali più densi rispetto al mantello, ha un raggio compreso fra 1500 e 2100 km.
+                            </p>
+                        <ul class="actions stacked">
+                            
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/Marte/mars_structure_interne_eclatee_big.jpeg" alt="" />
+                    </div>
+                </section>
+
+            <!-- Three -->
+                <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2>Superficie</h2>
+                        <p>La superficie di Marte apparve sin dalle prime esplorazioni mediante sonde automatiche come complessa e geologicamente diversificata. Mentre l'emisfero sud è ricoperto da vasti crateri e si eleva al di sopra del livello topografico di riferimento, l'emisfero nord è scarsamente craterizzato e situato generalmente al di sotto di tale livello (che corrisponde per convenzione alla quota ove la pressione atmosferica vale 6,1 hPa). La superficie del pianeta appare fortemente craterizzata, a causa della quasi totale assenza di agenti erosivi (principalmente, l’attività geologica, atmosferica e idrosferica) e dalla totale assenza di attività tettonica delle placche capace di formare e poi modellare le strutture tettoniche.</p>
+                        <ul class="actions stacked">
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/Marte/PIA17944-MarsCuriosityRover-AfterCrossingDingoGapSanddune-20140209.jpeg" alt="" />
+                    </div>
+                </section>
+
+            <!-- Four -->
+                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2>Atmosfera🌫️</h2>
+                        <p>L'atmosfera di Marte, a causa della bassa gravità del pianeta, è estremamente rarefatta e completamente priva dei gas più leggeri; la pressione rilevata dalle sonde automatiche inviate sul pianeta è di circa 0,7–0,9 kPa nelle depressioni più profonde (la pressione media dell'atmosfera terrestre, a titolo di paragone, è di 101 kPa). Precedenti osservazioni dei transiti di Marte davanti alle stelle, effettuate dalla Terra, già prima dell'era spaziale avevano suggerito una simile situazione. L'atmosfera appare ricca di polveri che le conferiscono una caratteristica colorazione arancione-marrone quando osservata dalla superficie del pianeta; i dati registrati dai Mars Exploration Rover indicano una dimensione media delle particelle sospese di circa 1,5 μm. 
+                            </p>
+                        <ul class="actions stacked">
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/Marte/mars-atmosphere-methane-missing.jpeg" alt="" />
+                    </div>
+                </section>
+
+        
+<!-- Three -->
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+<div class="content">
+    <h2>&nbsp;&nbsp;Peculiarità</h2>
+    <p style="margin-left: 20px; margin-right: 20px;">Pur presentando temperature medie superficiali piuttosto basse (tra −120 e −14 °C) e un'atmosfera molto rarefatta, è il pianeta più simile alla Terra tra quelli del sistema solare. Le sue dimensioni sono intermedie tra quelle del nostro pianeta e quelle della Luna, e ha l'inclinazione dell'asse di rotazione e la durata del giorno simili a quelle terrestri. La sua superficie presenta formazioni vulcaniche, valli, calotte polari e deserti sabbiosi, e formazioni geologiche che vi suggeriscono la presenza di un'idrosfera in un lontano passato. La bassissima densità dell'atmosfera non è poi in grado di consumare buona parte delle meteore, che pertanto raggiungono il suolo con maggior frequenza che non sulla Terra. Tra le formazioni geologiche più notevoli di Marte si segnalano: l'Olympus Mons, o monte Olimpo, il vulcano più grande del sistema solare (alto 27 km); le Valles Marineris, un lungo canyon notevolmente più esteso di quelli terrestri; e un enorme cratere sull'emisfero boreale, ampio circa il 40% dell'intera superficie marziana. </p>
+    <ul class="actions stacked">
+    </ul>
+</div>
+<div class="image">
+    <img src="images/Marte/file-20171003-18673-1bpti6e.png" alt="" style="background-attachment: fixed; background-size: cover;" />
+</div>
+</section>
+
+        <!-- Four -->
+            <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+                <div style="padding-top: 32px; padding-bottom: 0px;" class="content">
+                    <h2>🎞️&nbsp;&nbsp;Marte nel cinema&nbsp;&nbsp;🎥</h2>
+                    <p>Ovviamente, non devi dire ai registi di Hollywood che il pianeta rosso è fantastico. Lo sanno da anni e hanno una lunga storia di estrazione di Marte per idee di storie impressionanti. Risale a più di 100 anni - ai primi decenni di regia - con una delle prime offerte "A Trip to Mars", che fu distribuito dalla società di produzione cinematografica di Thomas Edison nel 1910.</p>
+                    <h2><img src="assets/images/png/klipartz.com.png" style="width: 105px; height: 80px;">The Martian</h2>
+                    <p>Durante una missione su Marte, l’astronauta Mark Watney viene considerato morto dopo una forte tempesta e per questo abbandonato dal suo equipaggio. Ma Watney è sopravvissuto e ora si ritrova solo sul pianeta ostile. Con scarse provviste, Watney deve attingere al suo ingegno, alla sua arguzia e al suo spirito di sopravvivenza per trovare un modo per segnalare alla Terra che è vivo. Alien, Blade Runner e Prometheus sono alcuni dei successi fantascientifici della storia del cinema. Il comune denominatore di queste tre opere è il regista che le ha dirette, Ridley Scott. Un autore che, se nei film citati, ha dato largo spazio all’immaginazione creando emozionanti universi paralleli, per questo atteso The Martian ha voluto seguire un approccio più radicato nella scienza e nella realtà quotidiana: “La sfida della fantascienza è per lo più la fantasia. Quello che è veramente interessante di questo film è la realtà totale della situazione".</p>
+                    <div style="margin-left: 90px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/JjfVdaLQjE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+                    <ul class="actions stacked">
+                    </ul>
+                </div>
+                <div class="image">
+                    <img src="images/Marte/the-martian-matt-damon-e1444954731352.jpeg" alt="" />
+                </div>
+            </section>
+
+            <!-- Three -->
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+    <div style="padding-top: 30px; padding-bottom: 0px;" class="content">
+        <h2>&nbsp;&nbsp;I Marziani</h2>
+        <p style="margin-left: 20px; margin-right: 20px;">Nel 1877 l'astronomo italiano Giovanni Virginio Schiaparelli credette di scorgere una rete di canali sulla superficie di Marte. Nella traduzione in inglese e francese delle sue osservazioni la parola "canali" fu resa impropriamente come "canals" (che significa "canali artificiali"), invece che channels, così che si diffuse l'idea che i canali fossero opere di ingegneria idraulica realizzate da una specie intelligente per sopravvivere in un mondo più arido della Terra. L'astronomo statunitense Percival Lowell ebbe un ruolo di primo piano nella diffusione di queste idee, tanto che i canali divennero un elemento tipico delle descrizioni di fantasia del pianeta rosso. Per quanto già all'inizio del Novecento si fosse dimostrato che i canali erano un'illusione ottica causata sia dal modesto diametro dei telescopi usati e sia dalle osservazioni compiute dalla superficie terrestre, l'ipotesi speculativa diede un grande impulso alle opere di fantascienza e per molto tempo ancora si immaginò che gli extraterrestri sarebbero giunti da Marte.</p>
+        <ul class="actions stacked">
+          <div style="align-items: right;margin-left: 90px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/8z6waqOj-bE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </ul>
+    </div>
+    <div class="image">
+        <img src="images/Marte/Banche-Marziani.jpeg" alt="" style="background-attachment: fixed; background-size: cover;" />
+    </div>
+    </section>
+    
+<!--Four -->
+<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+    <div style="padding-top: 20px; text-align: center;" class="content">
+    <h1 style="text-align: center;">🛰️&nbsp;&nbsp;Galleria&nbsp;&nbsp;📡</h1>
+    
+      <div class="containers">
+        <div class="carousel">
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+        </div>
+      </div>
+      
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      
+     <div style="align-items: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/ZEyAs3NWH4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    
+     <button style="height: 50px; width: 50px; padding-left: 10px; padding-right: 6.3px;" class="scrollToTopBtn">☀️</button>
+  </div>
+  </section>
+
+
+</div>
+    <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+var rootElement = document.documentElement
+
+function handleScroll() {
+  // Do something on scroll
+  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+  if ((rootElement.scrollTop / scrollTotal ) > 0.80) {
+    // Show button
+    scrollToTopBtn.classList.add("showBtn")
+  } else {
+    // Hide button
+    scrollToTopBtn.classList.remove("showBtn")
+  }
+}
+
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop)
+document.addEventListener("scroll", handleScroll)</script>
+<script type="text/javascript" src="./main.70a66962.js"></script>
+        
+
+</body>
+</html>

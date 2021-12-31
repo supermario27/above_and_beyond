@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/Earth-PNG-File.png">
+  <link href="favicon/Earth-PNG-File.png" rel="icon">
+
+  <title>Terra</title>  
+
+<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+<!-- Add your content of header -->
+<style>
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px
+}
+
+.scrollToTopBtn {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px;
+  
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all .5s ease
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+.containers {
+  position: relative;
+  width: 320px;
+  margin: 50px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: static;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face { 
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  display: flex;
+}
+
+.carousel__face:nth-child(1) {
+  background-image: url("images/Carosello3/coral-reef-animals.jpeg");
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+  background-image: url("images/Carosello3/stnmtz_20150716_68953.jpeg");
+    transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url("images/Carosello3/887498.jpeg");
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("images/Carosello3/2404565.png");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+  background-image: url("images/Carosello3/png.png");
+ transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+  background-image: url("images/Carosello3/kenyan-landscapes-1024x536.jpeg");
+ transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+  background-image: url("images/Carosello3/grand-canyon-north-rim-wotans-throne.jpeg");
+ transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("images/Carosello3/australia-victoria-koalas-and-kangaroos-tour.jpg");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("images/Carosello3/shibuya-cosa-vedere-copertina.jpeg");
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+</style>
+<header>
+  <nav style="position: unset;" class="navbar  navbar-fixed-top navbar-default">
+    <div  class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div style="margin-left: -90px;" class="collapse navbar-collapse" id="navbar-collapse" >
+        <ul class="nav navbar-nav ">
+          <li><a style="text-decoration:none" href="./index.html" title="">🪐 Welcome 🧑🏼‍🚀</a></li>
+          <li><a style="text-decoration:none"  href="./Solarsystem.html" title="">&#127756; Solar System</a></li>
+          <li><a style="text-decoration:none"  href="./spacex.html" title="">&#128640; SpaceX</a></li>
+          <li><a style="text-decoration:none" href="./nasa.html" title="">🌔 NASA</a></li>
+        </ul>
+&nbsp;
+          <ul style="margin-left: -200px;" class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+            <li><a style="text-decoration:none"  href="./Mercury.html" title="" class="active">Mercurio</a></li>
+            <li><a style="text-decoration:none"  href="./venere.html" title="" class="active">Venere</a></li>
+            <li><a style="text-decoration:none"  href="./terra.html" title="" class="active">Terra</a></li>
+            <li><a style="text-decoration:none"  href="./marte.html" title="" class="active">Marte</a></li>
+            <li><a style="text-decoration:none"  href="./giove.html" title="" class="active">Giove</a></li>
+            <li><a style="text-decoration:none"  href="./saturno.html" title="" class="active">Saturno</a></li>
+            <li><a style="text-decoration:none"  href="./urano.html" title="" class="active">Urano</a></li>
+            <li><a style="text-decoration:none"  href="./nettuno.html" title="" class="active">Nettuno</a></li>
+          </ul>
+
+
+      </div> 
+    </div>
+  </nav>
+</header>
+<head>
+    <title>Terra</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&family=Walter+Turncoat&family=Amatic+SC&family=Calligraffitti&family=Fondamento&family=Merienda&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+        <div id="wrapper" class="divided">
+
+            <!-- One -->
+                <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+                    <div style="padding-top: 40px;" class="content">
+                        <h1><img src="favicon/Earth-PNG-File.png" style="width: 55px; height: 55px;">&nbsp;&nbsp;&nbsp;Terra</h1>
+                        <p class="major">Gli scienziati da secoli effettuano ricerche volte a ricostruire la storia della Terra. Secondo le ipotesi più aggiornate la Terra e gli altri pianeti del Sistema Solare si formarono 4,54 miliardi di anni fa. Inizialmente liquefatto, il pianeta gradualmente si raffreddò formando una crosta terrestre sempre più di tipo granitico, simile all'odierna. La Luna si formò subito dopo, probabilmente a causa dell'impatto tra la Terra e un protopianeta conosciuto come Theia, grande quanto Marte e avente circa il 10% della massa della Terra. Nell'urto tra i due corpi un po' della massa di questo piccolo corpo celeste si unì alla Terra e una porzione fu espulsa nello spazio e abbastanza materiale sopravvisse per formare un satellite orbitante</p>
+                        <ul class="actions stacked">
+                            <li><a href="#first" class="button big wide smooth-scroll-middle">Iniziamo!</a></li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/339823601.jpeg" alt="" />
+                    </div>
+                </section>
+
+            <!-- Two -->
+                <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+                    <div class="content">
+                        <h2>Struttura Interna</h2>
+                        <p>Simile ad altri pianeti terrestri, ha una disposizione a strati che possono essere definiti sia da proprietà chimiche, sia reologiche. La Terra ha una crosta esterna solida di silicati, un mantello estremamente viscoso, un nucleo esterno liquido che è molto meno viscoso del mantello, e un nucleo solido. La comprensione scientifica della struttura interna della Terra è basata sulle estrapolazioni di evidenza fisica scaturita dai primi pochi chilometri della superficie terrestre, dai campioni portati alla superficie dalle più remote profondità tramite l'attività vulcanica e dalle analisi delle onde sismiche che l'hanno attraversata.</p>
+                        <ul class="actions stacked">
+                            
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/3Senza titolo.jpg" alt="" />
+                    </div>
+                </section>
+
+            <!-- Three -->
+                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2>Superficie</h2>
+                        <p>La superficie terrestre può variare enormemente da luogo a luogo. Circa il 70,8% della superficie è coperta da acqua; inoltre la maggior parte della piattaforma continentale si trova al di sotto del livello marino. Nella parte sommersa del pianeta sono presenti tutte le caratteristiche tipiche di un territorio montuoso, caratteristiche comprendenti un sistema di dorsali medio oceaniche, dei vulcani sommersi, delle fosse oceaniche, dei canyon sottomarini, degli altopiani e delle piane abissali. Il rimanente 29,2% emerso consiste di montagne, deserti, pianure, altopiani e altre zone geomorfologiche minori. La superficie planetaria si modifica costantemente secondo tempi geologici a causa dei movimenti delle varie placche tettoniche e dell'erosione; inoltre le sue caratteristiche geografiche, create o deformate dai movimenti tettonici, sono sottoposte agli influssi meteorologici (pioggia, neve, ghiaccio, vento), a svariati cicli termici (gelo/disgelo delle zone alpine, elevata escursione termica giornaliera nel caso dei deserti) e all'azione chimica. In fine nel modellamento del pianeta sono compresi anche grandi eventi come glaciazioni e impatti meteorici. Durante la migrazione di due placche tettoniche continentali la crosta oceanica viene subdotta al di sotto dei margini di queste ultime. Nello stesso tempo, a causa della risalita di materiale mantellico, nuova crosta oceanica viene generata lungo margini divergenti nelle dorsali medio oceaniche.</p>
+                        <ul class="actions stacked">
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/pic03.jpg" alt="" />
+                    </div>
+                </section>
+
+            <!-- Four -->
+                <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2>Atmosfera🌫️</h2>
+                        <p>La Terra ha un'atmosfera relativamente spessa, composta per il 78% di azoto, per il 21% di ossigeno e per l'1% di argon, più tracce di altri gas tra cui l'anidride carbonica e l'acqua. L'atmosfera separa la superficie terrestre dall'ambiente inospitale dello spazio, blocca buona parte delle radiazioni solari nocive, modera le temperature sulla superficie ed è il veicolo di trasporto del vapore acqueo e di altre sostanze gassose. I suoi vari strati, la troposfera, la stratosfera, la mesosfera, la termosfera e l'esosfera sono diversi attorno al globo e variano anche assieme alle stagioni.
+                            È proprio dell'atmosfera il fenomeno dell'effetto serra, consistente nell'assorbimento e riemissione dell'infrarosso termico da parte di alcune specie gassose. I principali gas responsabili di questo fenomeno sono il diossido di carbonio, il vapore acqueo, il metano e l'ozono. L'effetto serra, in misura adeguata, è fondamentale per la vita sul pianeta; infatti senza questo "scudo termico", la temperatura media della superficie terrestre sarebbe di circa −18 °C, incompatibile con il mantenimento dell'acqua allo stato liquido e, di conseguenza, con la vita
+                            </p>
+                        <ul class="actions stacked">
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/earth-from-space-vertical-wallpaper.jpg.webp" alt="" />
+                    </div>
+                </section>
+
+        
+<!-- Three -->
+<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+<div class="content">
+    <h2>🌊&nbsp;&nbsp;H2O</h2>
+    <p style="margin-left: 20px; margin-right: 20px;">La Terra è l'unico pianeta del sistema solare in cui è nota la presenza di acqua allo stato liquido in superficie e in grande quantità, tanto da farle attribuire l'appellativo di "pianeta blu". Le masse d'acqua coprono circa i tre quarti della superficie totale, per un volume totale di circa 1 332 miliardi di chilometri cubi, mentre la restante parte è composta da terre emerse, sia sopra sia sotto il livello medio del mare; più precisamente:
+
+            superfici acquee: 361 126 222 km² (70,8%);
+            terre emerse: 148 939 063 km² (29,2%);
+            superficie totale: 510 065 285 km;
+
+        Le masse acquee possono essere suddivise in oceani (Oceano Atlantico, Oceano Indiano, Oceano Pacifico), mari, laghi e fiumi.
+        Quelle continentali, invece, dapprima in sette grandi continenti: America del Nord, America del Sud, Africa, Antartide, Asia, Europa e Oceania, e, successivamente, nelle loro suddivisioni </p>
+    <ul class="actions stacked">
+    </ul>
+</div>
+<div class="image">
+    <img src="images/tumblr_741ca0cda76db0982c36cfe9d2265834_d41364c7_400.gif" alt="" style="background-attachment: fixed; background-size: cover;" />
+</div>
+</section>
+
+<!--Four -->
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+<div class="content" style="padding-bottom: 0%;">
+    <h2>🐅 Vita! 🌲</h2>
+    <h3 style="margin: 0px; font-family: amatic se;">🌎Un pianeta </h3>
+    <p style="margin: 0px;">Gli habitat che compongono il nostro pianeta sono connessi e dipendono l'uno dall'altro.  La sorprendente diversità della vita sulla terra dipende da queste connessioni globali.</p>	
+    <h3 style="margin: 0px; font-family: calligraffitti;font-weight: bold;">🧊Mondi ghiacciati</h3>
+    <p style="margin: 0px;">I nostri poli sono alcune delle ultime terre selvagge rimaste sulla terra. Eppure, proprio mentre stiamo iniziando a capire questi luoghi straordinari, stanno cambiando rapidamente.</p>				
+    <h3 style="margin: 0px; font-family: fondamento;">🌴Giungle</h3>
+    <p style="margin: 0px;">Nella giungla, ovunque è speciale.  Ospitano un'incredibile varietà di specie, sono gli ecosistemi più antichi e diversificati del nostro pianeta.</p>	
+    <h3 style="margin: 0px; font-family: merienda;">🏞️Foreste</h3>
+    <p style="margin: 0px;">Dipendiamo unicamente dagli alberi: senza di loro, la vita come la conosciamo non esisterebbe.  Abbiamo sfruttato le nostre foreste nel corso dei secoli, ma diamo loro la possibilità, si riprenderanno.</p>	
+    <h3 style="margin: 0px; font-family: pacifico;"><img src="images/emojipng.com-532239.png" style="width: 25px; height: 25px;">Praterie</h3>
+    <p style="margin: 0px;">Le praterie del nostro pianeta sono la ricca dimora dei nostri grandi animali terrestri, ma si stanno anche restringendo.  La vita nelle nostre praterie dipende dallo spazio.</p>	
+    <h3 style="margin: 0px; font-family: permanent marker;">💦Acqua dolce</h3>
+    <p style="margin: 0px;">Senza acqua dolce, la vita sulla terra non esisterebbe.  È la risorsa più preziosa del nostro pianeta, ma è limitata.  Ogni goccia è vitale per tutte le specie e per noi umani che ne fanno affidamento.</p>	
+    <h3 style="margin: 0px; font-family: Waiting for the Sunrise;font-weight: bold;"><img src="images/kisspng-beach-sea-computer-file-beach-and-the-sea-5a8cdce42e8cc9.3676788915191810281907.png" style="width: 45px; height: 30px;">Mari costieri</h3>
+    <p style="margin: 0px;">I nostri mari costieri sono una ricca comunità di piante e animali che lavorano insieme, tutti elementi vitali per la salute del nostro pianeta e dell'umanità.</p>	
+    <h3 style="margin: 0px; font-family: Walter Turncoat;">🐋L'alto mare</h3>
+    <p style="margin: 0px;">Gli oceani aperti sono i più grandi ecosistemi del mondo, vitali per tutti, di proprietà di nessuno.  Attraversate da balene, squali, tartarughe, tonni e albatri e dimora di misteriose creature degli abissi, queste sono le vere terre selvagge del nostro pianeta.</p>	
+    <ul class="actions stacked">
+        <div style="align-items: right;"><video poster="images/Schermata 2021-03-28 alle 17.51.04.png" style="margin-top: 50px; margin-left: 95px;" width="560" height="315" controls><source src="images/The Beauty Of Earth.mp4" type="video/mp4"></video></div>
+    </ul>
+
+</div><div class="image">
+    <img src="images/32373509ffeba9c9180fdc4ec41f29ea.gif" alt="" />
+</div>
+
+<button style="height: 50px; width: 50px; padding-left: 10px; padding-right: 6.3px;" class="scrollToTopBtn">☀️</button>
+
+</section>
+
+<!--Four -->
+<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+  <div style="padding-top: 20px; text-align: center;" class="content">
+  <h1 style="text-align: center;">🛰️&nbsp;&nbsp;Galleria&nbsp;&nbsp;📡</h1>
+  
+    <div class="containers">
+      <div class="carousel">
+        <div class="carousel__face"></div>
+        <div class="carousel__face"></div>
+        <div class="carousel__face"></div>
+        <div class="carousel__face"></div>
+        <div class="carousel__face"></div>
+        <div class="carousel__face"></div>
+        <div class="carousel__face"></div>
+        <div class="carousel__face"></div>
+        <div class="carousel__face"></div>
+      </div>
+    </div>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div style="align-items: center;padding-bottom: -10px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/JGXi_9A__Vc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<button style="height: 50px; width: 50px; padding-left: 10px; padding-right: 6.3px;" class="scrollToTopBtn">☀️</button>
+</div>
+</section>
+
+</div>
+    <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+var rootElement = document.documentElement
+
+function handleScroll() {
+  // Do something on scroll
+  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+  if ((rootElement.scrollTop / scrollTotal ) > 0.80) {
+    // Show button
+    scrollToTopBtn.classList.add("showBtn")
+  } else {
+    // Hide button
+    scrollToTopBtn.classList.remove("showBtn")
+  }
+}
+
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop)
+document.addEventListener("scroll", handleScroll)</script>
+<script type="text/javascript" src="./main.70a66962.js"></script>
+        
+
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/neptune.png">
+  <link href="favicon/neptune.png" rel="icon">
+
+  <title>Nettuno</title>  
+
+<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+<!-- Add your content of header -->
+<style>
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px
+}
+
+.scrollToTopBtn {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px;
+  
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all .5s ease
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+.containers {
+  position: relative;
+  width: 320px;
+  margin: 50px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: static;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face { 
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  display: flex;
+}
+
+.carousel__face:nth-child(1) {
+  background-image: url("images/Carosello8/Neptune.jpeg");
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+  background-image: url("images/Carosello8/4ea7957ad7cf3d41635d1750d4e45337.jpeg");
+    transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url("images/Carosello8/TornFancyAsiaticmouflon-size_restricted.gif");
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("images/Carosello8/Senza\ titolo.jpg");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+  background-image: url("images/Carosello8/cugva5ctj0u1cz16_1600497317.jpeg");
+ transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+  background-image: url("images/Carosello8/neptune-new-york-prints.jpeg");
+ transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+  background-image: url("images/Carosello8/GracefulFrenchEquine-size_restricted.gif");
+ transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("images/Carosello8/Senza\ titolo.png");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("images/Carosello8/Naiad_Recovery_v3.jpeg");
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+</style>
+<header>
+  <nav style="position: unset;" class="navbar  navbar-fixed-top navbar-default">
+    <div  class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div style="margin-left: -90px;" class="collapse navbar-collapse" id="navbar-collapse" >
+        <ul class="nav navbar-nav ">
+          <li><a style="text-decoration:none" href="./index.html" title="">🪐 Welcome 🧑🏼‍🚀</a></li>
+          <li><a style="text-decoration:none"  href="./Solarsystem.html" title="">&#127756; Solar System</a></li>
+          <li><a style="text-decoration:none"  href="./spacex.html" title="">&#128640; SpaceX</a></li>
+          <li><a style="text-decoration:none" href="./nasa.html" title="">🌔 NASA</a></li>
+        </ul>
+&nbsp;
+          <ul style="margin-left: -200px;" class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+            <li><a style="text-decoration:none"  href="./Mercury.html" title="" class="active">Mercurio</a></li>
+            <li><a style="text-decoration:none"  href="./venere.html" title="" class="active">Venere</a></li>
+            <li><a style="text-decoration:none"  href="./terra.html" title="" class="active">Terra</a></li>
+            <li><a style="text-decoration:none"  href="./marte.html" title="" class="active">Marte</a></li>
+            <li><a style="text-decoration:none"  href="./giove.html" title="" class="active">Giove</a></li>
+            <li><a style="text-decoration:none"  href="./saturno.html" title="" class="active">Saturno</a></li>
+            <li><a style="text-decoration:none"  href="./urano.html" title="" class="active">Urano</a></li>
+            <li><a style="text-decoration:none"  href="./nettuno.html" title="" class="active">Nettuno</a></li>
+          </ul>
+
+
+      </div> 
+    </div>
+  </nav>
+</header>
+<head>
+    <title>Nettuno</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&family=Walter+Turncoat&family=Amatic+SC&family=Calligraffitti&family=Fondamento&family=Merienda&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+        <div id="wrapper" class="divided">
+
+            <!-- One -->
+                <section class="banner style1 orient-right content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
+                    <div style="padding-top: 40px;" class="content">
+                        <h1>Nettuno&nbsp;&nbsp;<img src="favicon/neptune.png" style="width: 55px; height: 55px;"></h1>
+                        <p class="major">Quando le persone pensano ai sistemi ad anello, Saturno è solitamente il pianeta che viene in mente. Ma ti sorprenderebbe sapere che anche Nettuno ha un sistema di anelli? Sfortunatamente, è piuttosto difficile da osservare rispetto all'anello luminoso e audace di Saturno; motivo per cui non è così ben riconosciuto. In totale, Nettuno ha cinque anelli, che prendono tutti il ​​nome dagli astronomi che hanno fatto importanti scoperte su Nettuno: Galle, Le Verrier, Lassell, Arago e Adams. Il nome del pianeta è dedicato al dio romano del mare (Nettuno); il suo simbolo è ♆ (Simbolo astronomico di Nettuno), una versione stilizzata del tridente di Nettuno.</p>
+                        <ul class="actions stacked">
+                            <li><a href="#first" class="button big wide smooth-scroll-middle">Iniziamo!</a></li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img  src="images/Nettuno/Science-Neptune-FA-PIA01492_orig.jpeg" alt="" />
+                    </div>
+                </section>
+
+            <!-- Two -->
+                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+                    <div class="content">
+                        <h2>Struttura Interna</h2>
+                        <p>La struttura interna di Nettuno ricorda quella di Urano; la sua atmosfera forma circa il 5-10% della massa del pianeta, estendendosi dal 10 al 20% del suo raggio, dove raggiunge pressioni di circa 10 gigapascal. Nelle regioni più profonde sono state trovate concentrazioni crescenti di metano, ammoniaca e acqua.
+                            Gradualmente questa regione più calda e oscura condensa in un mantello liquido surriscaldato, dove le temperature raggiungono valori compresi fra i 2000 K ed i 5000 K. Il mantello possiede una massa di 10-15 masse terrestri ed è ricco di acqua, ammoniaca, metano ed altre sostanze. Come è solito nelle scienze planetarie, questa mistura è chiamata "ghiacciata", sebbene sia in realtà un fluido caldo e molto denso. Questo fluido, che possiede un'elevata conduttività elettrica, è talvolta chiamato "oceano di acqua e ammoniaca". Alla profondità di 7000 km, lo scenario potrebbe essere quello in cui il metano si decompone in cristalli di diamante e precipita verso il centro. Il nucleo planetario di Nettuno è composto da ferro, nichele silicati; i modelli forniscono una massa di circa 1,2 masse terrestri. La pressione del nucleo è di 7 Mbar, milioni di volte superiore a quella della superficie terrestre, e la temperatura potrebbe essere sui 5400 K. 
+                            </p>
+                        <ul class="actions stacked">
+                            
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/Nettuno/struttura-interna-di-nettuno-con-i-titoli-per-scienza-104063618.jpeg" alt="" />
+                    </div>
+                </section>
+
+            <!-- Three -->
+                <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2>Superficie</h2>
+                        <p>Nettuno possiede i venti più forti di ogni altro pianeta nel Sistema Solare. Sono state misurate raffiche a velocità superiori ai 2100 km/h. All'epoca del sorvolo da parte della Voyager 2, nel 1989, l'emisfero sud del pianeta possedeva una Grande Macchia Scuracomparabile con la Grande Macchia Rossa di Giove; la temperatura delle nubi più alte di Nettuno era di circa −218 °C, una delle più fredde del Sistema solare, a causa della grande distanza dal Sole. La temperatura al centro del pianeta è di circa 7000 °C, comparabile con la temperatura superficiale del Sole e simile a quella del nucleo di molti altri pianeti conosciuti. Il pianeta possiede inoltre un debole sistema di anelli, scoperto negli anni sessanta ma confermato solo dalla Voyager 2.</p>
+                        <ul class="actions stacked">
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/Nettuno/93eed2c72fc2d83aba0e969bea741145.jpeg" alt="" />
+                    </div>
+                </section>
+
+            <!-- Four -->
+                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2>Atmosfera🌫️</h2>
+                        <p>Ad alta quota, l'atmosfera di Nettuno è formata all'80% da idrogeno ed al 19% da elio, e tracce di metano. Notevoli bande di assorbimento del metano si trovano vicino alla lunghezza d'onda dei 600 nm nella parte rossa ed infrarossa dello spettro. Così come per Urano, quest'assorbimento della luce rossa da parte del metano atmosferico contribuisce a conferire a Nettuno il suo caratteristico colore azzurro intenso, sebbene il colore azzurro differisca dal più tenue acquamarina tipico di Urano. Dato che la quantità di metano contenuta nell'atmosfera di Nettuno è simile a quella di Urano, ci dev'essere qualche altra sostanza non conosciuta che contribuisca in modo determinante a conferire questa tonalità così intensa al pianeta. 
+                            L'atmosfera di Nettuno è suddivisa in due regioni principali: la bassa troposfera, dove la temperatura decresce con l'altitudine, e la stratosfera, dove la temperatura aumenta con l'altitudine; il confine fra le due, la tropopausa si trova a circa 0,1 bar. La stratosfera dunque è seguita dalla termosfera alla pressione inferiore a 10−4−10−5 µbar. L'atmosfera sfuma gradualmente verso l'esosfera.
+                            </p>
+                        <ul class="actions stacked">
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/Nettuno/maxresdefault.jpeg">
+                </section>
+
+        
+<!-- Three -->
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+<div style="padding-top: 32px; padding-bottom: 0px;" class="content">
+    <h2>&nbsp;&nbsp;Peculiarità</h2>
+    <p style="margin-left: 20px; margin-right: 20px;">Nettuno ha una composizione simile a quella di Urano ed entrambi hanno composizioni differenti da quelle dei più grandi pianeti gassosi Giove e Saturno. Per questo sono talvolta classificati in una categoria separata, i cosiddetti "giganti ghiacciati". L'atmosfera di Nettuno, sebbene simile a quelle sia di Giove che di Saturno essendo composta principalmente da idrogeno ed elio, possiede anche maggiori proporzioni di "ghiacci", come acqua, ammoniaca e metano, assieme a tracce di idrocarburi e forse azoto. In contrasto, l'interno del pianeta è composto essenzialmente da ghiacci e rocce come il suo simile Urano. Le tracce di metano presenti negli strati più esterni dell'atmosfera contribuiscono a conferire al pianeta Nettuno il suo caratteristico colore azzurro intenso. </p>
+    <ul class="actions stacked">
+    </ul>
+</div>
+<div class="image">
+    <img src="images/Nettuno/VastCraftyBorer-size_restricted.gif" alt="" style="background-attachment: fixed; background-size: cover;" />
+</div>
+</section>
+
+<!--Four -->
+<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+    <div style="padding-top: 20px; text-align: center;" class="content">
+    <h1 style="text-align: center;">🛰️&nbsp;&nbsp;Galleria&nbsp;&nbsp;📡</h1>
+    
+      <div class="containers">
+        <div class="carousel">
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+        </div>
+      </div>
+      
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      
+     <div style="align-items: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/faKnto4Pb6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    
+     <button style="height: 50px; width: 50px; padding-left: 10px; padding-right: 6.3px;" class="scrollToTopBtn">☀️</button>
+  </div>
+  </section>
+
+
+</div>
+    <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+var rootElement = document.documentElement
+
+function handleScroll() {
+  // Do something on scroll
+  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+  if ((rootElement.scrollTop / scrollTotal ) > 0.80) {
+    // Show button
+    scrollToTopBtn.classList.add("showBtn")
+  } else {
+    // Hide button
+    scrollToTopBtn.classList.remove("showBtn")
+  }
+}
+
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop)
+document.addEventListener("scroll", handleScroll)</script>
+<script type="text/javascript" src="./main.70a66962.js"></script>
+        
+
+</body>
+</html>

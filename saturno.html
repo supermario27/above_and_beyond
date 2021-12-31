@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/1920px-Saturn_01.png">
+  <link href="favicon/1920px-Saturn_01.png" rel="icon">
+
+  <title>Saturno</title>  
+
+<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+<!-- Add your content of header -->
+<style>
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px
+}
+
+.scrollToTopBtn {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px;
+  
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all .5s ease
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+.containers {
+  position: relative;
+  width: 320px;
+  margin: 50px auto 0 auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  position: static;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face { 
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  display: flex;
+}
+
+.carousel__face:nth-child(1) {
+  background-image: url("images/Carosello6/cassini-orbit-around-saturn.jpeg");
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) { 
+  background-image: url("images/Carosello6/Saturn-rings.png");
+    transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url("images/Carosello6/Inside_Titan_pillars.jpeg");
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("images/Carosello6/86jTSWmRjfnALJwiQj5yzB.jpeg");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) { 
+  background-image: url("images/Carosello6/unnamed.jpeg");
+ transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) { 
+  background-image: url("images/Carosello6/artwork-of-river-delta-on-titan-illustration-royalty-free-illustration-1574193020.jpeg");
+ transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) { 
+  background-image: url("images/Carosello6/PIA18432.jpeg");
+ transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("images/Carosello6/Saturn.jpeg");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("images/Carosello6/Saturn_eclipse.jpeg");
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+</style>
+<header>
+  <nav style="position: unset;" class="navbar  navbar-fixed-top navbar-default">
+    <div  class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div style="margin-left: -90px;" class="collapse navbar-collapse" id="navbar-collapse" >
+        <ul class="nav navbar-nav ">
+          <li><a style="text-decoration:none" href="./index.html" title="">🪐 Welcome 🧑🏼‍🚀</a></li>
+          <li><a style="text-decoration:none"  href="./Solarsystem.html" title="">&#127756; Solar System</a></li>
+          <li><a style="text-decoration:none"  href="./spacex.html" title="">&#128640; SpaceX</a></li>
+          <li><a style="text-decoration:none" href="./nasa.html" title="">🌔 NASA</a></li>
+        </ul>
+&nbsp;
+          <ul style="margin-left: -200px;" class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+            <li><a style="text-decoration:none"  href="./Mercury.html" title="" class="active">Mercurio</a></li>
+            <li><a style="text-decoration:none"  href="./venere.html" title="" class="active">Venere</a></li>
+            <li><a style="text-decoration:none"  href="./terra.html" title="" class="active">Terra</a></li>
+            <li><a style="text-decoration:none"  href="./marte.html" title="" class="active">Marte</a></li>
+            <li><a style="text-decoration:none"  href="./giove.html" title="" class="active">Giove</a></li>
+            <li><a style="text-decoration:none"  href="./saturno.html" title="" class="active">Saturno</a></li>
+            <li><a style="text-decoration:none"  href="./urano.html" title="" class="active">Urano</a></li>
+            <li><a style="text-decoration:none"  href="./nettuno.html" title="" class="active">Nettuno</a></li>
+          </ul>
+
+
+      </div> 
+    </div>
+  </nav>
+</header>
+<head>
+    <title>Saturno</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&family=Walter+Turncoat&family=Amatic+SC&family=Calligraffitti&family=Fondamento&family=Merienda&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+        <div id="wrapper" class="divided">
+
+            <!-- One -->
+                <section class="banner style1 orient-right content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
+                    <div style="padding-top: 40px;" class="content">
+                        <h1>Saturno&nbsp;&nbsp;<img src="favicon/1920px-Saturn_01.png" style="width: 90px; height: 60px;"></h1>
+                        <p class="major">Anche conosciuto come "Il Signore degli Anelli", la sua bellezza e splendore sono sotto gli occhi di tutti. Nove Terre una accanto all'altra coprirebbero quasi il diametro di Saturno. Ciò non include gli anelli di Saturno. Saturno impiega circa 10,7 ore (nessuno lo sa con precisione) per ruotare sul suo asse una volta - un "giorno" di Saturno - e 29 anni terrestri per orbitare attorno al sole. Saturno è un pianeta gigante gassoso e quindi non ha una superficie solida come quella terrestre. Ma potrebbe avere un nucleo solido da qualche parte lì dentro. Saturno non può sostenere la vita come la conosciamo, ma alcune delle lune di Saturno hanno condizioni che potrebbero supportare la vita.</p>
+                        <ul class="actions stacked">
+                            <li><a href="#first" class="button big wide smooth-scroll-middle">Iniziamo!</a></li>
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img  src="images/Saturno/saturn.png" alt="" />
+                    </div>
+                </section>
+
+            <!-- Two -->
+                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+                    <div class="content">
+                        <h2>Struttura Interna</h2>
+                        <p>Saturno possiede una struttura interna molto simile a quella di Giove; come l'altro gigante gassoso, presenta una composizione affine a quella del Sole, essendo costituito per il 75% di idrogeno ed il 25% di elio, con tracce d'acqua, metanoed ammoniaca.
+                            Nello strato esterno è presente un'atmosfera dove si alternano fasce chiare e scure parallele all'equatore con perturbazioni cicloniche e formazioni di nubi; il tutto digrada nella zona sottostante, un oceano liquido di idrogeno molecolare ed elio che sovrasta un involucro tra 0,2 e 0,5 raggi planetari sottoposto ad una pressione di 3 milioni di atmosfere dove domina l'idrogeno metallico liquido ad una temperatura di circa 20 000 °C.
+                            Successivamente, al centro del pianeta, è presente il nucleo, che misura 0,2 raggi planetari, circa le dimensioni della Terra, con una temperatura di circa 12 000 °C ed una pressione di 8 milioni di atmosfere, formato da silicati ferrosi e ghiaccio.                            
+                            </p>
+                        <ul class="actions stacked">
+                            
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/Saturno/89937608-deze-afbeelding-geeft-de-interne-structuur-van-de-saturn-planeet-met-bijschriften-weer-het-is-een-re.jpeg" alt="" />
+                    </div>
+                </section>
+
+            <!-- Three -->
+                <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2>Superficie</h2>
+                        <p>Con una massa pari a 95,181 volte e un volume pari a 744 volte quello terrestre Saturno è il secondo pianeta più grande del sistema solare dopo Giove. È classificato come gigante gassoso poiché gli strati esterni sono costituiti prevalentemente da gas e manca di una superficie definita, anche se potrebbe avere un nucleo solido. Saturno appare visibilmente schiacciato ai poli, con i suoi diametri equatoriale e polare (120536 km e 108728 km rispettivamente) che differiscono di quasi il 10%. Questa forma è il risultato della sua rapida rotazione e della sua composizione chimica, con la densità più bassa del sistema solare, facile a deformarsi. Anche gli altri pianeti, e i giganti gassosi in particolare, sono deformati in maniera analoga, ma in modo molto meno evidente. Saturno è anche l'unico pianeta del sistema solare con una densità media inferiore a quella dell'acqua: solo 0,69 g/cm³. In realtà il valore medio è una combinazione di densità molto basse nell'atmosfera del pianeta e densità più elevate all'interno, sicuramente maggiori di quella dell'acqua. Per questi valori si presuppone che il pianeta abbia un nucleo di rocce e metalli non particolarmente massiccio. Saturno ha una massa 95 volte quella terrestre, e assieme a Giove compone il 92% della massa planetaria totale del sistema solare. </p>
+                        <ul class="actions stacked">
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/Saturno/death-dive-to-saturn-hero_f82MwTt.width-2000.png" alt="" />
+                    </div>
+                </section>
+
+            <!-- Four -->
+                <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+                    <div class="content">
+                        <h2>Atmosfera🌫️</h2>
+                        <p>L'atmosfera di Saturno, molto simile a quella di Giove, è composta principalmente di idrogeno ed elio; quella di Saturno contiene tuttavia una percentuale di idrogeno leggermente maggiore, oltre ad una quantità di fosforo ed arsenico circa 10 volte superiore.
+                            Una gigantesca tempesta nell'emisfero nord di Saturno, fotografata all'inizio del 2011 dalla sonda Cassini.
+                            Anche nel caso di Saturno, come per Giove, è stato possibile individuare tramite la spettroscopia agli infrarossi la presenza di concentrazioni infinitesimali di monossido di carbonio, fosfina, idruro di germanio ed arsina. Forse questi composti chimici, che normalmente non potrebbero esistere in un'atmosfera a base di idrogeno ed elio, si originano in reazioni chimiche sconosciute e sono poi spinti fino al livello atmosferico visibile del pianeta da forti moti convettivi.
+                            Ciononostante l'atmosfera saturniana è percorsa da venti fortissimi, che soffiano fino a 1000 km/h presso l'equatore. Sono inoltre presenti cicloni, soprattutto alle alte latitudini, dalla durata relativamente breve e dalle dimensioni massime di circa 1200 km.
+                            </p>
+                        <ul class="actions stacked">
+                        </ul>
+                    </div>
+                    <div class="image">
+                        <img src="images/Saturno/Senza titolo.jpg">
+                </section>
+
+        
+<!-- Three -->
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+<div style="padding-top: 32px; padding-bottom: 0px;" class="content">
+    <h2>Titano&nbsp;&nbsp;<img src="favicon/titan_2.png" style="width: 55px; height: 55px;"></h2>
+    <p style="margin-left: 20px; margin-right: 20px;">Con montagne, venti, piogge e moti ondosi, Titano assomiglia più a un pianeta che a una classica luna sterile e piena di crateri. Inoltre, sotto la crosta superficiale, ospita un oceano di acqua liquida, e ciò lo rende uno dei luoghi più adatti ad ospitare la vita. Sotto a quel velo color mandarino potrebbe infatti celarsi un pianeta prospero di forme di vita, chimicamente simili a quelle terrestri o magari caratterizzate da processi biochimici completamente alieni. Distante quasi un miliardo e mezzo di chilometri dal Sole, Titano è così fredda che il ghiaccio è duro come roccia e i composti organici come l’etano e il metano - che sulla Terra normalmente esistono allo stato gassoso - si raffreddano in liquidi gelidi e vischiosi che si depositano in enormi laghi e mari.</p>
+    <ul class="actions stacked">
+  <div style="align-items: center;margin-left: 90px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/lr4r70DWShk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>      
+    </ul>
+</div>
+<div class="image">
+    <img src="images/Saturno/titan_large.jpeg" alt="" style="background-attachment: fixed; background-size: cover;" />
+</div>
+</section>
+
+  <!-- Four -->
+  <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+    <div style="padding-top: 32px; padding-bottom: 0px;" class="content">
+        <h2><img src="images/Saturno/Cassini_Transparent.png" style="width: 65px; height: 85px;">&nbsp;&nbsp;Huygens</h2>
+        <p>Huygens era una sonda atmosferica che atterrò su Titano il 14 gennaio 2005, scoprendo che molte delle sue caratteristiche superficiali sembrano essere state formate da fluidi in qualche punto del passato. Titano è il corpo più distante dalla Terra per avere una sonda spaziale atterrata sulla sua superficie. La sonda Huygens è atterrata appena al largo della punta più orientale di una regione luminosa ora chiamata Adiri.La sonda ha fotografato colline chiare con "fiumi" scuri che scendono verso una pianura buia. La comprensione attuale è che le colline (chiamate anche altopiani) sono composte principalmente da acqua ghiacciata. Composti organici scuri, creati nell'atmosfera superiore dalla radiazione ultravioletta del Sole, possono piovere dall'atmosfera di Titano. Sono bagnati dalle colline con la pioggia di metano e si depositano in pianura su scale temporali geologiche.</p>
+        <ul class="actions stacked">
+     <div style="align-items: center;margin-left: 90px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/QbmcoL3OqPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </ul>
+    </div>
+    <div class="image">
+        <img src="images/Saturno/e9a6803f6c00a7c80b9a1b08c04b6bf7.jpeg">
+    </div>
+</section>
+
+<!--Four -->
+<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+    <div style="padding-top: 20px; text-align: center;" class="content">
+    <h1 style="text-align: center;">🛰️&nbsp;&nbsp;Galleria&nbsp;&nbsp;📡</h1>
+    
+      <div class="containers">
+        <div class="carousel">
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+          <div class="carousel__face"></div>
+        </div>
+      </div>
+      
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      
+     <div style="align-items: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/mdekB1fkHiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    
+     <button style="height: 50px; width: 50px; padding-left: 10px; padding-right: 6.3px;" class="scrollToTopBtn">☀️</button>
+  </div>
+  </section>
+
+
+</div>
+    <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
+var rootElement = document.documentElement
+
+function handleScroll() {
+  // Do something on scroll
+  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+  if ((rootElement.scrollTop / scrollTotal ) > 0.80) {
+    // Show button
+    scrollToTopBtn.classList.add("showBtn")
+  } else {
+    // Hide button
+    scrollToTopBtn.classList.remove("showBtn")
+  }
+}
+
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop)
+document.addEventListener("scroll", handleScroll)</script>
+<script type="text/javascript" src="./main.70a66962.js"></script>
+        
+
+</body>
+</html>
